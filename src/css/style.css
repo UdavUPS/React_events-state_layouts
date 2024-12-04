@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic);
+.root {
+  /* border: 1px solid black; */
+  width: 90%;
+  margin: auto;
+}
+
+.viewIcon {
+  margin-left: calc(99% - 40px);
+}
+
+.contend {
+  display: flex;
+  gap: 10%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* Карточки товаров */
+
+.pBox {
+ width: calc(100% / 4);
+ height: 350px;
+ /* border: 1px solid black; */
+ margin-bottom: 5%;
+ border-radius: 5px;
+ box-shadow: 0 3px 20px rgb(14, 13, 13);
+ background-color: #f5f5f5;
+}
+.pBox__name {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Muli';
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 3%;
+  z-index: 1;
+  position: relative;
+}
+
+.pBox__color {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 3%;
+  font-family: 'Muli';
+  color: #858585;
+  z-index: 1;
+  position: relative;
+}
+.pBox__img {
+  width: 100%;
+  margin-top: -16%;
+}
+
+.pBox__costBox {
+  /* border: 1px solid black; */
+  z-index: 1;
+  position: relative;
+  margin-top: -20%;
+  color: #fc0000;
+  font-family: 'Muli';
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pBox__costBox__price {
+  /* margin-left: 2%; */
+}
+
+.pBox__costBox__button {
+  border: 1px solid #fc0000;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 3%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.pBox__costBox__button:hover {
+  background-color: #fc0000;
+  color: #f5f5f5;
+}
+
+/* Карточки товаров в виде списка */
+
+.contend-M {
+  /* display: flex; */
+}
+
+.pBox-M {
+  width: 100%;
+  height: 150px;
+  /* border: 1px solid black; */
+  margin-bottom: 0.5%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ .pBox__img-M {
+  height: 100%;
+}
+
+ .pBox__name-M {
+   text-align: center;
+   text-transform: uppercase;
+   font-family: 'Muli';
+   font-weight: bold;
+   font-size: 1.25rem;
+   margin-top: 3%;
+   z-index: 1;
+   position: relative;
+ }
+ 
+ .pBox__color-M {
+   text-align: center;
+   font-size: 1rem;
+   margin-top: 3%;
+   font-family: 'Muli';
+   color: #858585;
+   z-index: 1;
+   position: relative;
+ }
+
+ 
+ .pBox__costBox__price-M {
+  color: #fc0000;
+  font-family: 'Muli';
+  font-weight: bold;
+  font-size: 1.25rem;
+ }
+ 
+ .pBox__costBox__button-M {
+  color: #fc0000;
+   font-family: 'Muli';
+   font-weight: bold;
+   font-size: 1.25rem;
+   border: 1px solid #fc0000;
+   display: inline-block;
+   text-transform: uppercase;
+   font-size: 1rem;
+   padding: 1%;
+   border-radius: 20px;
+   cursor: pointer;
+ }
+ 
+ .pBox__costBox__button-M:hover {
+   background-color: #fc0000;
+   color: #f5f5f5;
+ }
