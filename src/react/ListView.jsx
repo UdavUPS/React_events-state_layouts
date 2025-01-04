@@ -4,8 +4,9 @@ export function ListView({products}) {
 
     
         products.forEach(e => {
+            let k = Math.random();
             elem.push (
-                <div className="pBox-M">
+                <div className="pBox-M" key = {k}>
                     <img className="pBox__img-M" src={e.img} alt="" />
                     <div className="pBox__name-M">{e.name}</div>
                     <div className="pBox__color-M">{e.color}</div>

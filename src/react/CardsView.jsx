@@ -4,8 +4,9 @@ export function CardsView({products}) {
     
         
         products.forEach(e => {
+            let k = Math.random();
             elem.push (
-                <div className="pBox">
+                <div className="pBox" key = {k}>
                     <div className="pBox__name">{e.name}</div>
                     <div className="pBox__color">{e.color}</div>
                     <img className="pBox__img" src={e.img} alt="" />

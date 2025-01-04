@@ -11,7 +11,7 @@ import { useState } from 'react';
 function App() {
 
     let [icon, setIcon] = useState("view_list");
-    let [elem, chElem] = useState(<ListView products = {products}/>);
+    
   
 
 
@@ -19,11 +19,9 @@ function App() {
       
       if (icon === 'view_list') {
         setIcon("view_module");
-        chElem(<CardsView products = {products}/>);
     }
       if (icon === 'view_module') {
         setIcon("view_list");
-        chElem(<ListView products = {products}/>);
       }
     }
 
@@ -34,7 +32,7 @@ function App() {
         <IconSwitch onClick = {switcher} icon = {icon}  />
       </div>
       <div>
-        {elem}
+        {icon === "view_list" ? <ListView products = {products}/> : <CardsView products = {products}/>}
       </div>
     </div>
   );
