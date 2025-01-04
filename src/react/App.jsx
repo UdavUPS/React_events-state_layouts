@@ -1,6 +1,5 @@
 import { products } from './object.js';
 import { IconSwitch } from './IconSwitch.jsx';
-/* import { Store } from './Store.jsx'; */
 import { CardsView } from './CardsView.jsx';
 import { ListView } from './ListView.jsx';
 import { useState } from 'react';
