@@ -1,3 +1,5 @@
+import uniqid from 'uniqid';
+
 export function CardsView({products}) {
    
 
@@ -5,7 +7,7 @@ export function CardsView({products}) {
         <div className= "contend">
         { products.map(e => {
             return (
-                <div className="pBox" key = {Math.random()}>
+                <div className="pBox" key = {uniqid()}>
                     <div className="pBox__name">{e.name}</div>
                     <div className="pBox__color">{e.color}</div>
                     <img className="pBox__img" src={e.img} alt="" />
