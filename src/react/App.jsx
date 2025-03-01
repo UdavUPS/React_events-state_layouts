@@ -15,13 +15,7 @@ function App() {
 
 
     const switcher = () => {
-      
-      if (icon === 'view_list') {
-        setIcon("view_module");
-    }
-      if (icon === 'view_module') {
-        setIcon("view_list");
-      }
+      setIcon(icon === 'view_list'? "view_module" : "view_list");
     }
 
 

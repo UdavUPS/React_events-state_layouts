@@ -1,12 +1,11 @@
 export function ListView({products}) {
-    let elem =[];
 
 
-    
-        products.forEach(e => {
-            let k = Math.random();
-            elem.push (
-                <div className="pBox-M" key = {k}>
+    return (
+        <div className="contend-M">
+        { products.map(e => {
+            return (
+                <div className="pBox-M" key = {Math.random()}>
                     <img className="pBox__img-M" src={e.img} alt="" />
                     <div className="pBox__name-M">{e.name}</div>
                     <div className="pBox__color-M">{e.color}</div>
@@ -14,12 +13,7 @@ export function ListView({products}) {
                     <div className="pBox__costBox__button-M">add to cart</div>
                 </div>
             )
-        });
-
-
-    return (
-        <div className="contend-M">
-        {elem}
+        })}
         </div>
     )
     

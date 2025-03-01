@@ -1,12 +1,11 @@
 export function CardsView({products}) {
-    let elem =[];
+   
 
-    
-        
-        products.forEach(e => {
-            let k = Math.random();
-            elem.push (
-                <div className="pBox" key = {k}>
+    return (
+        <div className= "contend">
+        { products.map(e => {
+            return (
+                <div className="pBox" key = {Math.random()}>
                     <div className="pBox__name">{e.name}</div>
                     <div className="pBox__color">{e.color}</div>
                     <img className="pBox__img" src={e.img} alt="" />
@@ -16,13 +15,7 @@ export function CardsView({products}) {
                     </div>
                 </div>
             )
-         
-    });
-
-
-    return (
-        <div className= "contend">
-        {elem}
+        })}
         </div>
     )
     
